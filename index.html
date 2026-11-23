@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سلسلة الدعوات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1020; --card:#131a30; --line:#222c4a; --text:#eef1fb; --mute:#97a1c4;
+  --violet:#8b7bff; --lime:#b6f35a; --red:#ff6b81;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 400px at 85% -10%,#2a2470 0%,transparent 60%),var(--bg);color:var(--text);font-family:Cairo,system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:980px;margin:0 auto;padding:20px 18px 60px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.logo{font-weight:800;font-size:19px;display:flex;gap:8px;align-items:center}
+.logo i{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--violet),var(--lime));display:inline-block}
+.pill{font-size:13px;background:#1b2442;border:1px solid var(--line);padding:3px 12px;border-radius:99px;color:var(--lime)}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.3;margin:0 0 10px;font-weight:800}
+h1 b{color:var(--lime)}
+.sub{color:var(--mute);font-size:17px;max-width:680px;margin:0 0 26px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.step span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--violet);color:#0b1020;font-weight:800;margin-bottom:4px}
+.step p{margin:0;color:var(--mute);font-size:15px}
+.step h3{margin:0;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.stat b{display:block;font-size:30px;color:var(--lime);font-weight:800}
+.stat small{color:var(--mute)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h2{margin:0 0 4px;font-size:21px}
+.card .hint{color:var(--mute);font-size:15px;margin:0 0 14px}
+button,.btn{font-family:inherit;font-size:17px;font-weight:800;border:0;border-radius:12px;padding:12px 18px;cursor:pointer;width:100%;display:block;text-align:center;text-decoration:none}
+.go{background:var(--lime);color:#14200a}
+.ghost{background:#1d2748;color:var(--text);margin-top:10px;font-weight:600;font-size:15px}
+.violet{background:var(--violet);color:#0b1020}
+button:disabled{opacity:.55;cursor:wait}
+input,textarea{width:100%;font-family:inherit;font-size:16px;color:var(--text);background:#0e1429;border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin-bottom:10px}
+textarea{min-height:120px;direction:ltr;text-align:left;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--violet);border-color:transparent}
+.box{border:1px solid #3a4a2a;background:#17230f;border-radius:14px;padding:14px;margin-bottom:12px}
+.box.warn{border-color:#5a3340;background:#241219}
+.msg{margin:10px 0 0;font-size:15px;min-height:22px}
+.err{color:var(--red)} .ok{color:var(--lime)}
+table{width:100%;border-collapse:collapse;margin-top:6px}
+th,td{text-align:right;padding:10px 12px;border-bottom:1px solid var(--line);font-size:15px}
+th{color:var(--mute);font-weight:600}
+td:first-child{color:var(--mute);width:40px}
+.lb{margin-top:16px}
+.rules{margin-top:16px;color:var(--mute);font-size:14px}
+@media(max-width:760px){.cols,.steps{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><i></i> سلسلة الدعوات</div>
+    <span class="pill">مجاني ومن غير بيع</span>
+  </header>
+
+  <h1>خد دعوة <b>Instinct</b> النهارده… وسيب دعواتك لغيرك بكرة</h1>
+  <p class="sub">كل واحد بيشترك بياخد دعوات يوزعها. هنا الشباب بيحطوا دعواتهم، واللي محتاج بياخد واحدة. الشرط الوحيد: لما تشترك، ارجع حط دعواتك عشان السلسلة تكمّل.</p>
+
+  <div class="steps">
+    <div class="step"><span>١</span><h3>خد دعوتك</h3><p>دوس الزرار هتاخد لينك واحد.</p></div>
+    <div class="step"><span>٢</span><h3>اشترك</h3><p>افتح اللينك وسجّل في Instinct وقولنا إنه اشتغل.</p></div>
+    <div class="step"><span>٣</span><h3>رجّع الجميل</h3><p>حط دعواتك هنا لحد ما واحد تاني يستفيد.</p></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b id="s-donors">0</b><small>متبرعين</small></div>
+    <div class="stat"><b id="s-helped">0</b><small>اتساعدوا</small></div>
+    <div class="stat"><b id="s-avail">0</b><small>دعوات متاحة دلوقتي</small></div>
+    <div class="stat"><b id="s-wait">0</b><small>مستنيين دورهم</small></div>
+  </div>
+
+  <div class="cols">
+    <section class="card" id="take">
+      <h2>🙋 محتاج دعوة</h2>
+      <p class="hint">بتاخد لينك واحد. لو مفيش دعوات دلوقتي هتدخل الطابور وهتظهرلك أول ما تتوفر.</p>
+      <div id="take-body"></div>
+    </section>
+
+    <section class="card" id="give">
+      <h2>🎁 معايا دعوات</h2>
+      <p class="hint">حط كل لينك في سطر (لحد 10 في المرة). اللينك الواحد بيخدم شخص واحد.</p>
+      <input id="name" maxlength="30" placeholder="اسمك في لوحة الشرف (اختياري)">
+      <textarea id="links" placeholder="https://..."></textarea>
+      <button class="go" id="donate">سيب الدعوات</button>
+      <p class="msg" id="give-msg"></p>
+    </section>
+  </div>
+
+  <section class="card lb">
+    <h2>🏆 لوحة الشرف</h2>
+    <table><thead><tr><th>#</th><th>المتبرع</th><th>حطّ</th><th>اتستخدم</th></tr></thead><tbody id="lb"></tbody></table>
+  </section>
+
+  <p class="rules">الدعوات من ناس حقيقية، فمفيش ضمان إن كل لينك هيشتغل. لو اللينك ماشتغلش دوس «اللينك ماشتغلش» وهنديك غيره. ممنوع بيع الدعوات أو طلب فلوس عليها.</p>
+</div>
+
+<script>
+const API = location.protocol === 'file:' ? 'http://localhost:3000/api' : '/api';
+let cid = null;
+try { cid = localStorage.getItem('ic_cid'); } catch (_) {}
+if (!cid) {
+  cid = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(b => b.toString(16).padStart(2, '0')).join('');
+  try { localStorage.setItem('ic_cid', cid); } catch (_) {}
+}
+const $ = id => document.getElementById(id);
+const nf = n => new Intl.NumberFormat('ar-EG').format(n);
+
+async function call(path, body) {
+  const r = await fetch(API + path, {
+    method: body === undefined ? 'GET' : 'POST',
+    headers: { 'x-client': cid, 'Content-Type': 'application/json' },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw Object.assign(new Error(j.message || 'حصلت مشكلة، جرّب تاني.'), { data: j });
+  return j;
+}
+function el(tag, props = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) k === 'class' ? e.className = v : k === 'text' ? e.textContent = v : e.setAttribute(k, v);
+  kids.forEach(k => e.append(k));
+  return e;
+}
+function button(label, cls, fn) {
+  const b = el('button', { class: cls, text: label });
+  b.onclick = async () => { b.disabled = true; try { await fn(); } catch (e) { showErr(e.message); } b.disabled = false; };
+  return b;
+}
+function showErr(m) { const p = $('take-body').querySelector('.msg') || $('take-body').appendChild(el('p', { class: 'msg' })); p.className = 'msg err'; p.textContent = m; }
+
+let state = null, timer = null;
+function renderTake(s) {
+  const root = $('take-body'); root.replaceChildren();
+  if (s.invite && !s.joined) {
+    const box = el('div', { class: 'box' });
+    box.append(el('b', { text: '🎉 دي دعوتك. افتحها واشترك في Instinct:' }));
+    const a = el('a', { class: 'btn violet', href: s.invite.url, target: '_blank', rel: 'noopener noreferrer', text: 'افتح الدعوة' });
+    a.style.marginTop = '10px';
+    box.append(a);
+    root.append(box);
+    root.append(button('✅ اشتركت واشتغلت معايا', 'go', async () => { state = await call('/joined', {}); render(); refresh(); }));
+    root.append(button('❌ اللينك ماشتغلش', 'ghost', async () => {
+      if (s.swapsLeft <= 0) throw new Error('وصلت للحد الأقصى من التبديل.');
+      state = await call('/broken', {}); render(); refresh();
+    }));
+  } else if (s.joined) {
+    const box = el('div', { class: 'box' + (s.owes ? ' warn' : '') });
+    box.append(el('b', { text: s.owes ? '🤝 مبروك! بقى دورك: حط دعواتك عشان غيرك يستفيد.' : '💚 كتّر خيرك، دعواتك وصلت لناس تانية.' }));
+    root.append(box);
+    if (s.owes) root.append(button('روح لسيب الدعوات', 'violet', () => { $('links').focus(); $('give').scrollIntoView({ behavior: 'smooth' }); }));
+  } else if (s.waiting) {
+    const box = el('div', { class: 'box warn' });
+    box.append(el('b', { text: `⏳ انت في الطابور، رقمك ${nf(s.waiting)}. سيب الصفحة مفتوحة وهتظهرلك الدعوة تلقائي.` }));
+    root.append(box);
+  } else {
+    root.append(button('خدلي دعوة', 'go', async () => { state = await call('/claim', {}); render(); refresh(); }));
+  }
+  root.append(el('p', { class: 'msg' }));
+}
+function render() { if (state) renderTake(state); }
+
+async function refresh() {
+  try {
+    const [st, lb, me] = await Promise.all([call('/stats'), call('/leaderboard'), call('/me')]);
+    $('s-donors').textContent = nf(st.donors);
+    $('s-helped').textContent = nf(st.helped);
+    $('s-avail').textContent = nf(st.available);
+    $('s-wait').textContent = nf(st.waiting);
+    const tb = $('lb'); tb.replaceChildren();
+    if (!lb.length) tb.append(el('tr', {}, el('td', { colspan: 4, text: 'لسه مفيش متبرعين. كن الأول! 🌱' })));
+    lb.forEach((r, i) => tb.append(el('tr', {}, el('td', { text: nf(i + 1) }), el('td', { text: r.name }), el('td', { text: nf(r.given) }), el('td', { text: nf(r.used) }))));
+    const changed = JSON.stringify(me) !== JSON.stringify(state);
+    state = me;
+    if (changed) render();
+    if (!$('name').value && me.name) $('name').value = me.name;
+  } catch (_) {}
+}
+
+$('donate').onclick = async function () {
+  const b = this, m = $('give-msg');
+  b.disabled = true; m.className = 'msg'; m.textContent = '';
+  try {
+    const r = await call('/donate', { name: $('name').value, links: $('links').value.split(/\s+/).filter(Boolean) });
+    m.className = 'msg ok';
+    m.textContent = `🎉 تمام! اتضافت ${nf(r.added)} دعوة.` + (r.rejected.length ? ` (${nf(r.rejected.length)} اتتجاهلوا لأنهم مش صالحين أو متكررين)` : '');
+    $('links').value = ''; state = r.me; render(); refresh();
+  } catch (e) {
+    m.className = 'msg err'; m.textContent = e.message;
+  }
+  b.disabled = false;
+};
+
+refresh();
+setInterval(refresh, 8000);
+</script>
+</body>
+</html>
